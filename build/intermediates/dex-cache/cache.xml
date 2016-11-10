@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/alen/code/SourceCode/HelloTrace/app/libs/BaiduLBS_Android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5b975149ac16dc8b4af11cf20884f86fde47d2f7">
+        <dex dex="/Users/alen/code/SourceCode/HelloTrace/app/build/intermediates/pre-dexed/debug/BaiduLBS_Android_dea4f624b05bb47e4839b2cd399d0d6a8b2aa7f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/alen/code/SourceCode/HelloTrace/app/libs/android-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="/Users/alen/code/SourceCode/HelloTrace/app/build/intermediates/pre-dexed/debug/android-support-v4_900092338b4967dddec489d2f44d6811ade84bd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/alen/code/SourceCode/HelloTrace/app/libs/BaiduTraceSDK_v2_1_15.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3080175a04798e770bf5514891614e10c550f1a5">
+        <dex dex="/Users/alen/code/SourceCode/HelloTrace/app/build/intermediates/pre-dexed/debug/BaiduTraceSDK_v2_1_15_123ce51eafd3bc04688895d50a32f4d390274a56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/alen/code/SourceCode/HelloTrace/app/libs/gson-2.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9">
+        <dex dex="/Users/alen/code/SourceCode/HelloTrace/app/build/intermediates/pre-dexed/debug/gson-2.2.1_a48b90b4900d07790ea3d02b14fc7813f8c2f5fb.jar" />
+    </item>
+
+</items>
