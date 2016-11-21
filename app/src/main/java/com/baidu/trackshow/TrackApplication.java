@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.telephony.TelephonyManager;
 import android.widget.Toast;
 
 import com.baidu.mapapi.SDKInitializer;
@@ -62,6 +63,7 @@ public class TrackApplication extends Application {
         // 初始化轨迹服务客户端
         client = new LBSTraceClient(mContext);
 
+        entityName = "myTrace:"+ getImei(this);
         // 初始化轨迹服务
         trace = new Trace(mContext, serviceId, entityName, traceType);
 
@@ -123,4 +125,23 @@ public class TrackApplication extends Application {
         return mBaiduMap;
     }
 
+
+    /**
+     * 获取设备IMEI码
+     *
+     * @param context
+     * @return
+     */
+    protected static String getImei(Context context) {
+        String mImei = "NULL";
+        try {
+            TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            mImei = tm.getDeviceId();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("获取IMEI码失败");
+            mImei = "NULL";
+        }
+        return mImei;
+    }
 }

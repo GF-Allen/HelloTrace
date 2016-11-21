@@ -199,9 +199,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     protected static String getImei(Context context) {
         String mImei = "NULL";
         try {
-            mImei = ((TelephonyManager) context
-                    .getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
+            TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            mImei = tm.getDeviceId();
         } catch (Exception e) {
+            e.printStackTrace();
             System.out.println("获取IMEI码失败");
             mImei = "NULL";
         }
